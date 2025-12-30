@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationDMN">
         <activity
+            android:name=".ItemDetails"
+            android:exported="false" />
+        <activity
             android:name=".ContactFormActivity"
             android:exported="false" />
         <activity
