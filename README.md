@@ -9,8 +9,8 @@ Réaliser une application Android simple permettant d’ajouter et d’afficher 
 ## 📥 Cloner le projet
 
 ```bash
-git clone https://github.com/knblab/tp1-android.git
-cd tp1-android
+git clone https://github.com/knblab/tp1-android.git](https://github.com/abdellahchatioui/MyFirstCrudsAndroidApp.git
+cd MyFirstCrudsAndroidApp
 ```
 
 ## 🛠️ Lancer le projet
