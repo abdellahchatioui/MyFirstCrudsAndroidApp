@@ -1,4 +1,4 @@
-# TP1 – Gestion de Contacts (Android)
+# Gestion de Contacts (Android)
 
 Application Android simple permettant d’ajouter et d’afficher des contacts.
 
@@ -9,14 +9,14 @@ Réaliser une application Android simple permettant d’ajouter et d’afficher 
 ## 📥 Cloner le projet
 
 ```bash
-git clone https://github.com/knblab/tp1-android.git](https://github.com/abdellahchatioui/MyFirstCrudsAndroidApp.git
+git clone https://github.com/abdellahchatioui/MyFirstCrudsAndroidApp.git
 cd MyFirstCrudsAndroidApp
 ```
 
 ## 🛠️ Lancer le projet
 
 1. Ouvrir **Android Studio**
-2. **Open** → sélectionner le dossier `tp1-android`
+2. **Open** → sélectionner le dossier `MyFirstCrudsAndroidApp`
 3. Attendre la synchronisation **Gradle**
 4. Cliquer sur **Run ▶** (émulateur ou téléphone)
 
@@ -44,4 +44,4 @@ Les données doivent être stockées dans une **ArrayList**.
 
 ---
 
-TP 1 — Gestion de Contacts
+Gestion de Contacts
