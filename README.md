@@ -1,10 +1,10 @@
-# Gestion de Contacts (Android)
+# Gestion de Tasks (Angular)
 
-Application Android simple permettant d’ajouter et d’afficher des contacts.
+Application Angular simple permettant d’ajouter, afficher, modifier et supprimer des Tasks en utilisant JSON Server.
 
 ## 🎯 Objectif
 
-Réaliser une application Android simple permettant d’ajouter et d’afficher des contacts.
+Réaliser une application Angular CRUD permettant la gestion des tasks avec un backend simulé via JSON Server.
 
 ## 📥 Cloner le projet
 
@@ -15,33 +15,34 @@ cd MyFirstCrudsAndroidApp
 
 ## 🛠️ Lancer le projet
 
-1. Ouvrir **Android Studio**
-2. **Open** → sélectionner le dossier `MyFirstCrudsAndroidApp`
-3. Attendre la synchronisation **Gradle**
-4. Cliquer sur **Run ▶** (émulateur ou téléphone)
-
-## 🧩 Contraintes du TP
-
-### Composants autorisés
-
-- LinearLayout
-- TextView
-- EditText
-- Button
-- ListView
-
-Les données doivent être stockées dans une **ArrayList**.
+1️⃣ Installer les dépendances
+```bash
+npm install
+```
+2️⃣ Lancer le serveur JSON (port 4000)
+```bash
+json-server --watch db.json --port 4000
+```
+3️⃣ Lancer l’application Angular
+```bash
+ng serve
+```
+4️⃣ And open 
+```bash
+http://localhost:4200
+```
+## 🧩 technologies utilisées
+##### - Angular 
+##### - TypeScript
+##### - HTML / CSS
+##### - JSON Server (API REST simulée)
 
 ## ✅ Fonctionnalités demandées
-
-### Écran Login
-- Accès à l’écran principal après le clic sur **Login**
-
 ### Écran Principal
-- Add New Contact
-- Display List
-- Logout
+- Display Task
+- Home 
+- About
 
 ---
 
-Gestion de Contacts
+Gestion de Task
