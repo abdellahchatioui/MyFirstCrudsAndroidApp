@@ -19,8 +19,16 @@ Réaliser une application Android simple permettant d’ajouter et d’afficher 
 ## 📥 Cloner le projet
 
 
+```bash
 
-@@ -15,33 +15,34 @@ cd MyFirstCrudsAndroidApp
+
+git clone https://github.com/abdellahchatioui/MyFirstCrudsAndroidApp.git
+
+
+cd MyFirstCrudsAndroidApp
+
+
+```
 
 
 
