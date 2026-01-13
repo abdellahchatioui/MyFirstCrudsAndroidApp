@@ -35,29 +35,23 @@ public class ContactActivity extends AppCompatActivity {
         welcomeTxtView.setText("Welcome " + username);
 
         Button logout = findViewById(R.id.logout);
-
         logout.setOnClickListener(v -> {
-
             Intent goback = new Intent(ContactActivity.this, MainActivity.class);
             startActivity(goback);
             finish();
         });
 
         Button display = findViewById(R.id.btndisplay);
-
         display.setOnClickListener(v -> {
-
-            Intent intent2 = new Intent(ContactActivity.this, ContactListActivity.class);
-            startActivity(intent2);
+            Intent displayList = new Intent(ContactActivity.this, ContactListActivity.class);
+            startActivity(displayList);
         });
 
         Button add = findViewById(R.id.btnAdd);
         add.setOnClickListener(v -> {
-            Intent intent1 = new Intent(ContactActivity.this, ContactFormActivity.class);
-            startActivity(intent1);
+            Intent addContact = new Intent(ContactActivity.this, ContactFormActivity.class);
+            startActivity(addContact);
         });
-
-
 
 
     }

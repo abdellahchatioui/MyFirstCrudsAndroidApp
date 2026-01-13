@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         Button login = findViewById(R.id.login);
 
         login.setOnClickListener( v -> {
-
             EditText usernameEditText = findViewById(R.id.username);
             String username = usernameEditText.getText().toString();
             Intent intent = new Intent(MainActivity.this, ContactActivity.class);
