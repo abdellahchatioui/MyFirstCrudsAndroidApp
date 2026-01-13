@@ -1,6 +1,8 @@
 package com.yaceen.dmntest;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,19 +33,28 @@ public class ContactFormActivity extends AppCompatActivity {
 
         EditText nom = findViewById(R.id.name);
         EditText phone = findViewById(R.id.phoneNumber);
-
-
         Button sub = findViewById(R.id.submit);
+        Button back = findViewById(R.id.btnBack);
+
         sub.setOnClickListener(v -> {
             String name = nom.getText().toString().trim();
             String phonenum = phone.getText().toString().trim();
-            // contact_list.add(name+" --> "+phonenum);
-            Contact newContact = new Contact(name, phonenum);
-            DataBase.contactList.add(newContact);
+
+            //Contact newContact = new Contact(name, phonenum);
+            // DataBase.contactList.add(newContact);
+
+            SQLiteDatabase db = DatabaseHelper.getInstance(this).getWritableDatabase();
+            db.execSQL("INSERT INTO contacts(nom,phone) VALUES(?,?)", new String[]{name,phonenum});
+
             Toast.makeText(this,"Bien ajouter "+name, Toast.LENGTH_LONG).show();
 
-            Intent intent3=new  Intent(ContactFormActivity.this,ContactActivity.class);
-            startActivity(intent3);
+            Intent goBackToList = new  Intent(ContactFormActivity.this,ContactActivity.class);
+            startActivity(goBackToList);
+        });
+
+        back.setOnClickListener((v)->{
+            Intent goBackToHome = new Intent(this, ContactActivity.class);
+            startActivity(goBackToHome);
         });
     }
 }
