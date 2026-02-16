@@ -1,11 +1,9 @@
-package com.yaceen.dmntest;
+package com.yaceen.dmntest.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.util.ArrayList;
+import com.yaceen.dmntest.MainActivity;
+import com.yaceen.dmntest.R;
 
 public class ContactActivity extends AppCompatActivity {
 

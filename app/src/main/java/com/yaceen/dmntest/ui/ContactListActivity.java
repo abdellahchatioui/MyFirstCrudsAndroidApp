@@ -1,4 +1,4 @@
-package com.yaceen.dmntest;
+package com.yaceen.dmntest.ui;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -7,13 +7,12 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.yaceen.dmntest.helpers.DatabaseHelper;
+import com.yaceen.dmntest.R;
+import com.yaceen.dmntest.models.Contact;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,6 @@
-package com.yaceen.dmntest;
+package com.yaceen.dmntest.databases;
+
+import com.yaceen.dmntest.models.Contact;
 
 import java.util.ArrayList;
 
