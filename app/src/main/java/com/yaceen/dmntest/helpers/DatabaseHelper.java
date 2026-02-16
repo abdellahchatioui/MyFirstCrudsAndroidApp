@@ -1,4 +1,4 @@
-package com.yaceen.dmntest;
+package com.yaceen.dmntest.helpers;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

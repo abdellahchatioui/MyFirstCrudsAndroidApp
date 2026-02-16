@@ -12,16 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationDMN">
         <activity
-            android:name=".ItemDetails"
+            android:name=".ui.ItemDetails"
             android:exported="false" />
         <activity
-            android:name=".ContactFormActivity"
+            android:name=".ui.ContactFormActivity"
             android:exported="false" />
         <activity
-            android:name=".ContactListActivity"
+            android:name=".ui.ContactListActivity"
             android:exported="false" />
         <activity
-            android:name=".ContactActivity"
+            android:name=".ui.ContactActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

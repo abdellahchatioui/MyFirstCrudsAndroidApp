@@ -1,8 +1,7 @@
-package com.yaceen.dmntest;
+package com.yaceen.dmntest.ui;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.util.ArrayList;
+import com.yaceen.dmntest.helpers.DatabaseHelper;
+import com.yaceen.dmntest.R;
 
 public class ContactFormActivity extends AppCompatActivity {
 
@@ -48,7 +48,7 @@ public class ContactFormActivity extends AppCompatActivity {
 
             Toast.makeText(this,"Bien ajouter "+name, Toast.LENGTH_LONG).show();
 
-            Intent goBackToList = new  Intent(ContactFormActivity.this,ContactActivity.class);
+            Intent goBackToList = new  Intent(ContactFormActivity.this, ContactActivity.class);
             startActivity(goBackToList);
         });
 

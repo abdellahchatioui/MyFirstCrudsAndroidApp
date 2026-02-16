@@ -9,7 +9,7 @@
     android:gravity="center"
     android:padding="20dp"
     android:layout_margin="20dp"
-    tools:context=".ContactActivity">
+    tools:context=".ui.ContactActivity">
 
     <TextView
         android:id="@+id/welcome"

@@ -1,4 +1,4 @@
-package com.yaceen.dmntest;
+package com.yaceen.dmntest.models;
 
 public class Contact {
     private int id;

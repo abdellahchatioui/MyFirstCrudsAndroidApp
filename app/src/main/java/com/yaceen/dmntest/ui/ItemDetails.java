@@ -1,15 +1,12 @@
-package com.yaceen.dmntest;
+package com.yaceen.dmntest.ui;
 
 import android.app.AlertDialog;
-import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +15,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.yaceen.dmntest.R;
+import com.yaceen.dmntest.helpers.DatabaseHelper;
 
 public class ItemDetails extends AppCompatActivity {
 
